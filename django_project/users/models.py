@@ -10,7 +10,7 @@ class Profile(models.Model):
         return f'{self.user.username} Profile'
 
     # this method is run whenever we save a Profile object
-    def save(self):
+    def save(self, **kwargs):
         # run the super class' save method 
         super().save()
 
